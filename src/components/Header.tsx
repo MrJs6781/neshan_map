@@ -2,6 +2,14 @@
 
 import { toast } from "sonner";
 import { ModeToggle } from "./ModeToggle";
+import Link from "next/link";
+
+const listHeader = [
+  { id: 1, title: "صفحه اصلی", link: "/" },
+  { id: 2, title: "نقشه ها", link: "/maps" },
+  { id: 3, title: "درباره من", link: "/aboutme" },
+  { id: 4, title: "تماس با من", link: "/callme" },
+];
 
 export const Header = () => {
   const copyHandler = (text: string) => {
@@ -10,14 +18,22 @@ export const Header = () => {
   };
 
   return (
-    <div className="w-full flex items-center justify-between shadow-lg h-[60px] p-4 border-b">
-      <h5
+    <div className="w-full flex items-center justify-between shadow-lg h-[60px] p-4 border-b fixed top-0 z-20 bg-white dark:bg-black">
+      {/* <h5
         className="cursor-pointer"
         onClick={() => copyHandler("mrjs.programmer@gmail.com")}
       >
         mrjs.programmer@gmail.com
-      </h5>
+      </h5> */}
       <ModeToggle />
+      <ul className="flex items-center justify-center gap-4" style={{direction : "rtl"}}>
+        {listHeader.map((item) => (
+          <Link key={item.id} href={item.link}>
+            <p>{item.title}</p>
+          </Link>
+        ))}
+      </ul>
+      <span className="w-[20px]"></span>
     </div>
   );
 };
