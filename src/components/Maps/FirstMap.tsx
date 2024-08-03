@@ -12,8 +12,7 @@ export const FirstMap = () => {
         zoom: 14,
         mapTypeControllerOptions: { show: false },
       }}
-      className="w-full h-full relative min-h-[400px] max-w-[500px] md:max-w-[750px]"
-    >
-    </MapComponent>
+      className="w-full h-full max-h-[400px] relative min-h-[400px]"
+    ></MapComponent>
   );
 };

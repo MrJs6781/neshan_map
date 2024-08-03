@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Vazirmatn } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Toaster, toast } from 'sonner'
+import { Toaster, toast } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 const vazir = Vazirmatn({ subsets: ["latin"] });
@@ -27,7 +27,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          <Toaster richColors />
+          <Toaster richColors style={{ direction: "rtl" }} />
         </ThemeProvider>
       </body>
     </html>

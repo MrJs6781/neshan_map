@@ -19,21 +19,20 @@ export const Header = () => {
 
   return (
     <div className="w-full flex items-center justify-between shadow-lg h-[60px] p-4 border-b fixed top-0 z-20 bg-white dark:bg-black">
-      {/* <h5
-        className="cursor-pointer"
-        onClick={() => copyHandler("mrjs.programmer@gmail.com")}
-      >
-        mrjs.programmer@gmail.com
-      </h5> */}
       <ModeToggle />
-      <ul className="flex items-center justify-center gap-4" style={{direction : "rtl"}}>
+      <ul
+        className="flex items-center justify-center gap-4"
+        style={{ direction: "rtl" }}
+      >
         {listHeader.map((item) => (
           <Link key={item.id} href={item.link}>
             <p>{item.title}</p>
           </Link>
         ))}
       </ul>
-      <span className="w-[20px]"></span>
+      <span>
+        <h5>MRJs</h5>
+      </span>
     </div>
   );
 };

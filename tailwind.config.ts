@@ -75,6 +75,9 @@ const config = {
       backgroundImage : {
         "primary_bg" : "linear-gradient(to right , #606c88 , #3f4c6b)"
       },
+      fontFamily : {
+        'vazirB' : "vazirB",
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

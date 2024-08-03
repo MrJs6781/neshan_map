@@ -86,3 +86,8 @@
 html {
   font-family: "vazirL";
 }
+
+.shiki > pre {
+  white-space: pre-wrap;
+  padding: 15px;
+}
