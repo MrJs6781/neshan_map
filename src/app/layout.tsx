@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa">
-      <body className={vazir.className}>
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

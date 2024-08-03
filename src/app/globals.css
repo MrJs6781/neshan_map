@@ -67,3 +67,22 @@
     @apply bg-background text-foreground;
   }
 }
+
+@font-face {
+  font-family: "vazirL";
+  src: url("/font/Vazirmatn-Light.ttf");
+}
+
+@font-face {
+  font-family: "vazirM";
+  src: url("/font/Vazirmatn-Medium.ttf");
+}
+
+@font-face {
+  font-family: "vazirB";
+  src: url("/font/Vazirmatn-Bold.ttf");
+}
+
+html {
+  font-family: "vazirL";
+}
