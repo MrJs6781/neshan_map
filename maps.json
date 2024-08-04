@@ -35,15 +35,6 @@
       "type_card": "3D",
       "button_link": "add_full_screen_neshan_map",
       "button_text": "مشاهده جزئیات"
-    },
-    {
-      "id": "5",
-      "title": "افزودن اینپوت برای جستجو مکان مورد نظر توسط کاربر",
-      "description": "برای هندل کردن این قابلیت از api های نشان استفاده میکنیم که توضیحات کامل در صحفه این بخش موجود است",
-      "image": "/map_images/neshan_marker.png",
-      "type_card": "3D",
-      "button_link": "add_search_address_neshan_map",
-      "button_text": "مشاهده جزئیات"
     }
   ]
 }

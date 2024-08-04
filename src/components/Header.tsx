@@ -7,7 +7,7 @@ import Link from "next/link";
 const listHeader = [
   { id: 1, title: "صفحه اصلی", link: "/" },
   { id: 2, title: "نقشه ها", link: "/maps" },
-  { id: 3, title: "درباره من", link: "/aboutme" },
+  // { id: 3, title: "درباره من", link: "/aboutme" },
   { id: 4, title: "تماس با من", link: "/callme" },
 ];
 
@@ -30,9 +30,10 @@ export const Header = () => {
           </Link>
         ))}
       </ul>
-      <span>
+      <span className="sm:flex hidden">
         <h5>MRJs</h5>
       </span>
+
     </div>
   );
 };

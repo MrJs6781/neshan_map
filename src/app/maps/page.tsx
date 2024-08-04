@@ -17,14 +17,14 @@ export default function page() {
           ازش استفاده کنند
         </h3>
         <ul
-          className="w-full flex items-start justify-start gap-4 flex-wrap mt-8"
+          className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 items-start justify-start gap-4 mt-8"
           style={{ direction: "rtl" }}
         >
           {mapData?.allMaps.map((mapData) => {
             if (mapData.type_card == "3D") {
               return (
-                <li key={mapData.id} className="h-[500px]">
-                  <CardContainer className="inter-var h-full">
+                <li key={mapData.id} className="h-[500px] w-full">
+                  <CardContainer className="inter-var h-full w-full">
                     <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border flex justify-between flex-col">
                       <div className="w-full flex flex-col items-start">
                         <CardItem
