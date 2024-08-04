@@ -35,6 +35,15 @@
       "type_card": "3D",
       "button_link": "add_full_screen_neshan_map",
       "button_text": "مشاهده جزئیات"
+    },
+    {
+      "id": "5",
+      "title": "فیکس شدن مارکر در وسط صفحه هنگام جا به جا کردن نقشه",
+      "description": "بخوام با مثال بهتون بگم این قابلیت میشه مشابه با نقشه اسنپ فود و یا خود اسنپ که شما زمانی که نقشه رو جا به جا میکنید باعث میشه که مارکر در مرکز نقشه براتون فیکس باقی بمونه",
+      "image": "/map_images/neshan.png",
+      "type_card": "3D",
+      "button_link": "fix_marker_neshan_map",
+      "button_text": "مشاهده جزئیات"
     }
   ]
 }

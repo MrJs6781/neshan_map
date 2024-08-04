@@ -23,13 +23,13 @@ export default function page() {
           {mapData?.allMaps.map((mapData) => {
             if (mapData.type_card == "3D") {
               return (
-                <li key={mapData.id} className="h-[500px] w-full">
+                <li key={mapData.id} className="h-[550px] w-full">
                   <CardContainer className="inter-var h-full w-full">
                     <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border flex justify-between flex-col">
                       <div className="w-full flex flex-col items-start">
                         <CardItem
                           translateZ="50"
-                          className="text-xl font-bold text-neutral-600 dark:text-white"
+                          className="text-[17px] font-bold text-neutral-600 dark:text-white"
                         >
                           {mapData.title}
                         </CardItem>
