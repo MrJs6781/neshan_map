@@ -10,6 +10,7 @@ import { toast } from "sonner";
 type dataType = {
   id: number;
   title: string;
+  text: string;
   icon: any;
 };
 
@@ -17,28 +18,32 @@ const data = [
   {
     id: 1,
     title: "آدرس گیت هاب من : https://github.com/MrJs6781",
+    text: "https://github.com/MrJs6781",
     icon: <FaGithub className="text-[24px]" />,
   },
   {
     id: 2,
     title: "آدرس لینکدین من : https://www.linkedin.com/in/abolfazl-javadineya/",
+    text: "https://www.linkedin.com/in/abolfazl-javadineya/",
     icon: <FaLinkedin className="text-[24px]" />,
   },
   {
     id: 3,
     title: "آیدی من در تلگرام : https://t.me/mrjs6781",
+    text: "https://t.me/mrjs6781",
     icon: <FaTelegram className="text-[24px]" />,
   },
   {
     id: 3,
     title: "آدرس ایمیل من : mr.js.programmer@gmail.com",
+    text: "mr.js.programmer@gmail.com",
     icon: <SiGmail className="text-[24px]" />,
   },
 ];
 
 export default function page() {
   const copyHandler = (item: dataType) => {
-    navigator.clipboard.writeText(item.title);
+    navigator.clipboard.writeText(item.text);
     toast.success("با موفقیت کپی شد");
   };
 
