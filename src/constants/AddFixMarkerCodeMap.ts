@@ -22,6 +22,9 @@ export const AddFixMarkerMap = () => {
         window.document.querySelector(".mapboxgl-marker")?.remove();
       }
       new Marker({ color: "#B724AE" }).setLngLat(center).addTo(map);
+    });
+    map.on("moveend", (e: any) => {
+      const center = map.getCenter();
       console.log("Latiude : " + center.lat);
       console.log("Longitiude : " + center.lng);
     });
