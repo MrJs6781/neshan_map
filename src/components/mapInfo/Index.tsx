@@ -12,6 +12,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import { MapInfoNeshan } from "./MapInfoNeshan";
+import { AddMarkerNeshan } from "./AddMarkerNeshan";
 
 export const MapInfoIndex = () => {
   const getPathName = usePathname();
@@ -47,6 +48,7 @@ export const MapInfoIndex = () => {
         </Breadcrumb>
       </div>
       {getPathName.split("/")[2] == "neshan_map" && <MapInfoNeshan />}
+      {getPathName.split("/")[2] == "add_marker_neshan_map" && <AddMarkerNeshan />}
     </div>
   );
 };
