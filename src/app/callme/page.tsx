@@ -4,6 +4,7 @@ import { Header } from "@/components/Header";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 import { toast } from "sonner";
 
 type dataType = {
@@ -27,6 +28,11 @@ const data = [
     id: 3,
     title: "آیدی من در تلگرام : https://t.me/mrjs6781",
     icon: <FaTelegram className="text-[24px]" />,
+  },
+  {
+    id: 3,
+    title: "آدرس ایمیل من : mr.js.programmer@gmail.com",
+    icon: <SiGmail className="text-[24px]" />,
   },
 ];
 
