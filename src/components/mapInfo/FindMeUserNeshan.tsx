@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { codeToHtml } from "shiki";
 import { FiCopy } from "react-icons/fi"; // import copy icon
 import { toast } from "sonner";
-import { FineMeUserCodeMap } from "@/constants/FineMeUserCodeMap";
+import { FindMeUserCodeMap } from "@/constants/FindMeUserCodeMap";
 
 interface mapPropTypes {}
 
@@ -25,7 +25,7 @@ export const FindMeUserNeshan = () => {
   const [plainCode, setPlainCode] = useState(""); // to store plain code
 
   const createCode = async () => {
-    const code = FineMeUserCodeMap; // input code
+    const code = FindMeUserCodeMap; // input code
     const html = await codeToHtml(code, {
       lang: "javascript",
       theme: "night-owl",
