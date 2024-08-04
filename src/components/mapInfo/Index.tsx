@@ -14,6 +14,7 @@ import { useEffect } from "react";
 import { MapInfoNeshan } from "./MapInfoNeshan";
 import { AddMarkerNeshan } from "./AddMarkerNeshan";
 import { FindMeUserNeshan } from "./FindMeUserNeshan";
+import { AddFullScreenNeshan } from "./AddFullScreenNeshan";
 
 export const MapInfoIndex = () => {
   const getPathName = usePathname();
@@ -56,6 +57,9 @@ export const MapInfoIndex = () => {
       )}
       {getPathName.split("/")[2] == "add_find_location_user_neshan_map" && (
         <FindMeUserNeshan />
+      )}
+      {getPathName.split("/")[2] == "add_full_screen_neshan_map" && (
+        <AddFullScreenNeshan />
       )}
     </div>
   );
