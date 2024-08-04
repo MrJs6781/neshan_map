@@ -13,6 +13,7 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import { MapInfoNeshan } from "./MapInfoNeshan";
 import { AddMarkerNeshan } from "./AddMarkerNeshan";
+import { FindMeUserNeshan } from "./FindMeUserNeshan";
 
 export const MapInfoIndex = () => {
   const getPathName = usePathname();
@@ -42,13 +43,20 @@ export const MapInfoIndex = () => {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage className="text-[14px] font-vazirB">{getPathName.split("/")[2]}</BreadcrumbPage>
+              <BreadcrumbPage className="text-[14px] font-vazirB">
+                {getPathName.split("/")[2]}
+              </BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
       </div>
       {getPathName.split("/")[2] == "neshan_map" && <MapInfoNeshan />}
-      {getPathName.split("/")[2] == "add_marker_neshan_map" && <AddMarkerNeshan />}
+      {getPathName.split("/")[2] == "add_marker_neshan_map" && (
+        <AddMarkerNeshan />
+      )}
+      {getPathName.split("/")[2] == "add_find_location_user_neshan_map" && (
+        <FindMeUserNeshan />
+      )}
     </div>
   );
 };
